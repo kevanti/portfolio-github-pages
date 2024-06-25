@@ -22,7 +22,10 @@ function Profile(){
                 <a href="" className="main_section_profile_social_buttons instagram"><img src={instagram} alt="" /></a>
                 
             </div>
-            <a href="/img/kevin.pdf" className="main_section_profile_cv" download="kevin.pdf"><img src={download} alt="" /> Descargar CV</a>
+            <a href={`${process.env.PUBLIC_URL}/img/kevin.pdf`} className="main_section_profile_cv" download="kevin.pdf">
+  <img src={download} alt="" /> Descargar CV
+</a>
+
         </section>
     )
 }
